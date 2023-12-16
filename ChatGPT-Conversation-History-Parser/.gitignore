@@ -1,0 +1,2 @@
+# Ignore all 'conversations.json' files in the project
+**/conversations.json
