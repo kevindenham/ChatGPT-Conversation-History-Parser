@@ -2,7 +2,7 @@
 
 This project allows parsing conversation histories from ChatGPT in .Net Core. It reads JSON files containing conversation data and outputs the conversation title, along with all text exchanges formatted with the role, timestamp, and message content.
 
-This is more a general purpose development utility to expand with enable other functionality like storing conversations in a database or generating embeddings to query, or outputting to a web app for modification, etc.
+This is more a general purpose development utility to expand with other functionality like storing conversations in a database or generating embeddings to query, or outputting to a web app for modification, etc.
 
 If you don't need to do anything programmatic with your conversation history, I'd recommend just using the chat.html file contained in the export described below, which will display the conversation history in a nice format. It'll be simpler.
 
@@ -12,6 +12,7 @@ Export your conversations from the ChatGPT website. OpenAI will email you a link
 
 # Prerequisites
 
+Your exported conversation history from ChatGPT. See above.
 What things you need to install the software and how to install them:
 
 - .NET Core 3.1 or later
@@ -36,10 +37,10 @@ After running the program, it will output the conversation titles and messages t
 
 # Plans
 
-- Converting to a Nuget package for easier use in other projects.
 - Support for storing conversations in a database, optionally as embeddings to query and retrieve.
 - Support for pointing at a directory of multiple unzipped conversation exports, crawling for conversation.json and combining them into the same list.
 - Support for downloading from a URL, unzipping and extracting conversation.json
+- Converting to a Nuget package for easier use in other projects, which is what it's really intended for.
 
 # License
 
